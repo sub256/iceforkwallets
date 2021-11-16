@@ -14,13 +14,13 @@ coin_list = ["Chia", "Flax", "Flora", "HDD", "STAI", "Stor", "AedgeCoin", "Apple
              "Cannabis", "Chaingreen", "Covid", "CryptoDoge", "DogeChia", "Equality", "ETHgreen", "Fork", "Goji", "Goldcoin", "GreenDoge", "Kale",
              "Kiwi", "Kujenga", "LittleLamboCoin", "Lotus", "Lucky", "Maize", "Melati", "mELON", "Mint", "Mogua", "N-Chain", "Olive", "Peas", "PecanRolls",
              "Pipscoin", "Rose", "Salvia", "Scam", "Sector", "Seno", "SHIBgreen", "Skynet", "Socks", "Spare", "Taco", "Tad", "Thyme", "Tranzact", "Venidium",
-             "Wheat", "Xcha"]
+             "Wheat", "Xcha", "Achi"]
 
 prefix_list = ["xch", "xfx", "xfl", "hdd", "stai", "stor", "aec", "apple", "avo", "xbr", "xbt", "xbtc", "vag", "cac",
                "cans", "cgn", "cov", "xcd", "xdg", "xeq", "xeth", "xfk", "xgj", "ozt", "gdog", "xka",
                "xkw", "xkj", "llc", "lch", "six", "xmz", "xmx", "melon", "xkm", "mga", "nch", "xol", "pea", "rolls",
                "pips", "xcr", "xslv", "scm", "xsc", "xse", "xshib", "xnt", "sock", "spare", "xtx", "tad", "xth", "trz", "xvm",
-               "wheat", "xca"]
+               "wheat", "xca", "ach"]
 
 passphrase = ""
 
