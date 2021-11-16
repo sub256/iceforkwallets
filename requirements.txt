@@ -1,0 +1,7 @@
+bitstring
+blspy
+watchdog
+keyrings.cryptfile
+clvm
+clvm-rs
+clvm-tools

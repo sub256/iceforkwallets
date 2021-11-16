@@ -1,12 +1,12 @@
 from sys import path
 from os import path as os_path
-path.append(os_path.join('chia-source'))
+path.append(os_path.join('chia_source'))
 
-from chia-source.chia.util.ints import uint32
-from chia-source.chia.util.bech32m import encode_puzzle_hash
-from chia-source.chia.util.keychain import generate_mnemonic, mnemonic_to_seed
-from chia-source.chia.consensus.coinbase import create_puzzlehash_for_pk
-from chia-source.chia.wallet.derive_keys import master_sk_to_farmer_sk, master_sk_to_wallet_sk
+from chia_source.chia.util.ints import uint32
+from chia_source.chia.util.bech32m import encode_puzzle_hash
+from chia_source.chia.util.keychain import generate_mnemonic, mnemonic_to_seed
+from chia_source.chia.consensus.coinbase import create_puzzlehash_for_pk
+from chia_source.chia.wallet.derive_keys import master_sk_to_farmer_sk, master_sk_to_wallet_sk
 from blspy import AugSchemeMPL
 
 
