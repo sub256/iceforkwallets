@@ -14,13 +14,13 @@ coin_list = ["Chia", "Flax", "Flora", "HDD", "STAI", "Stor", "AedgeCoin", "Apple
              "Cannabis", "Chaingreen", "Covid", "CryptoDoge", "DogeChia", "Equality", "ETHgreen", "Fork", "Goji", "Goldcoin", "GreenDoge", "Kale",
              "Kiwi", "Kujenga", "LittleLamboCoin", "Lotus", "Lucky", "Maize", "Melati", "mELON", "Mint", "Mogua", "N-Chain", "Olive", "Peas", "PecanRolls",
              "Pipscoin", "Rose", "Salvia", "Scam", "Sector", "Seno", "SHIBgreen", "Skynet", "Socks", "Spare", "Taco", "Tad", "Thyme", "Tranzact", "Venidium",
-             "Wheat", "Xcha", "Achi"]
+             "Wheat", "Xcha", "Achi", "Silicoin", "Gold", "Profit", "Ecostake"]
 
 prefix_list = ["xch", "xfx", "xfl", "hdd", "stai", "stor", "aec", "apple", "avo", "xbr", "xbt", "xbtc", "vag", "cac",
                "cans", "cgn", "cov", "xcd", "xdg", "xeq", "xeth", "xfk", "xgj", "ozt", "gdog", "xka",
                "xkw", "xkj", "llc", "lch", "six", "xmz", "xmx", "melon", "xkm", "mga", "nch", "xol", "pea", "rolls",
                "pips", "xcr", "xslv", "scm", "xsc", "xse", "xshib", "xnt", "sock", "spare", "xtx", "tad", "xth", "trz", "xvm",
-               "wheat", "xca", "ach"]
+               "wheat", "xca", "ach", "sit", "gl", "profit", "eco"]
 
 passphrase = ""
 
@@ -50,8 +50,12 @@ def cold_wallets():
 
         for prefix, name in zip(prefix_list, coin_list):
             address = encode_puzzle_hash(create_puzzlehash_for_pk(master_sk_to_wallet_sk(key, uint32(0)).get_g1()), prefix)
+            staking_address = encode_puzzle_hash(create_puzzlehash_for_pk(master_sk_to_farmer_sk(key).get_g1()), prefix)
             print(name + ": " + address)
             file.write("\n" + name + ": " + address)
+            if prefix == "sit" or prefix == "gl" or prefix == "profit" or prefix == "eco":
+                print(name + " Staking:", staking_address)
+                file.write("\n" + name + " Staking:" + str(staking_address))
 
     file.close()
 

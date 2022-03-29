@@ -5,3 +5,4 @@ keyrings.cryptfile
 clvm
 clvm-rs
 clvm-tools
+inquirer

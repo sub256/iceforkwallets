@@ -2,7 +2,7 @@
 
 ### Chia Forks Cold Wallet Generator ###
 
-Requirements: chia source code, bitstring, blspy, watchdog, keyrings.cryptfile, clvm, clvm-rs, clvm-tools
+Requirements: chia source code, bitstring, blspy, watchdog, keyrings.cryptfile, clvm, clvm-rs, clvm-tools, inquirer
 
 Install:
 ```
@@ -23,6 +23,11 @@ IceFork Unique - Generates a unique mnemonic for each of the forks.
 Prints the output to screen and saves to file 'iceforkunique.txt' 
 ```
 python3 iceforkunique.py
+```
+GetAddress Util - Choose fork, enter 24 word mnemonic and it returns the first address and staking address (on supported chains).
+Prints the output to screen and saves to file 'getaddress.txt'
+```
+python3 getaddress.py
 ```
 
 Supported Forks:
@@ -85,6 +90,10 @@ Venidium: xvm
 Wheat: wheat
 Xcha: xca
 Achi: ach
+Silicoin: sit
+Gold: gl
+Profit: profit
+Ecostake: eco
 ```
 
 Donations welcome:
