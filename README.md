@@ -9,7 +9,7 @@ Install:
 git clone https://github.com/sub256/iceforkwallets
 cd iceforkwallets
 pip3 install -r requirements.txt
-git clone https://github.com/Chia-Network/chia-blockchain.git -b latest chia_source
+git clone https://github.com/Chia-Network/chia-blockchain.git -b 1.2.11 chia_source
 ```
 
 Run:
